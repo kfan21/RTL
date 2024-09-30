@@ -101,11 +101,7 @@ parser.add_argument('--temperature_energy', default=1, type=int,
                     help='temperature scaling for energy')
 
 # %%
-args = parser.parse_args(["--in_datadir","/home/fanke/ImageNet1k/ImageNet/val",
-                          "--out_datadir","/home/fanke/RTL_clean",
-                          "--model","BiT-S-R101x1",
-                          "--model_path", "checkpoints/BiT-S-R101x1-flat-finetune.pth.tar", 
-                          "--batch", "32"])
+args = parser.parse_args()
 
 # %%
 os.makedirs(f"./save_feature", exist_ok = True)
